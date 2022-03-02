@@ -1,4 +1,4 @@
-const { offlineFallback, warmStrategyCache } = require('workbox-recipes');
+const { warmStrategyCache } = require('workbox-recipes');
 const { CacheFirst } = require('workbox-strategies');
 const { StaleWhileRevalidate } = require('workbox-strategies');
 const { registerRoute } = require('workbox-routing');
@@ -45,4 +45,4 @@ registerRoute(
 
 
 // Implement asset caching
-offlineFallback();
+// offlineFallback();
